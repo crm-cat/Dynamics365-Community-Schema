@@ -1,0 +1,29 @@
+﻿<ManyToManyRelationshipMetadata xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/xrm/2011/Metadata">
+	<IsCustomRelationship>false</IsCustomRelationship>
+	<SchemaName>contactorders_association</SchemaName>
+	<SecurityTypes>None</SecurityTypes>
+	<RelationshipType>ManyToManyRelationship</RelationshipType>
+	<Entity1AssociatedMenuConfiguration>
+		<Behavior>DoNotDisplay</Behavior>
+		<Group>Details</Group>
+		<Label xmlns:d3p1="http://schemas.microsoft.com/xrm/2011/Contracts">
+			<d3p1:LocalizedLabels />
+		</Label>
+		<Order i:nil="true" />
+	</Entity1AssociatedMenuConfiguration>
+	<Entity1IntersectAttribute>salesorderid</Entity1IntersectAttribute>
+	<Entity1LogicalName>salesorder</Entity1LogicalName>
+	<Entity1NavigationPropertyName>contactorders_association</Entity1NavigationPropertyName>
+	<Entity2AssociatedMenuConfiguration>
+		<Behavior>DoNotDisplay</Behavior>
+		<Group>Details</Group>
+		<Label xmlns:d3p1="http://schemas.microsoft.com/xrm/2011/Contracts">
+			<d3p1:LocalizedLabels />
+		</Label>
+		<Order i:nil="true" />
+	</Entity2AssociatedMenuConfiguration>
+	<Entity2IntersectAttribute>contactid</Entity2IntersectAttribute>
+	<Entity2LogicalName>contact</Entity2LogicalName>
+	<Entity2NavigationPropertyName>contactorders_association</Entity2NavigationPropertyName>
+	<IntersectEntityName>contactorders</IntersectEntityName>
+</ManyToManyRelationshipMetadata>

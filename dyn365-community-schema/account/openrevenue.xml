@@ -1,0 +1,48 @@
+﻿<AttributeMetadata xmlns:i="http://www.w3.org/2001/XMLSchema-instance" i:type="MoneyAttributeMetadata" xmlns="http://schemas.microsoft.com/xrm/2011/Metadata">
+	<AttributeOf i:nil="true" />
+	<AttributeType>Money</AttributeType>
+	<Description xmlns:d2p1="http://schemas.microsoft.com/xrm/2011/Contracts">
+		<d2p1:LocalizedLabels>
+			<d2p1:LocalizedLabel>
+				<d2p1:Label>Sum of open revenue against an account and its child accounts.</d2p1:Label>
+				<d2p1:LanguageCode>1033</d2p1:LanguageCode>
+			</d2p1:LocalizedLabel>
+		</d2p1:LocalizedLabels>
+	</Description>
+	<DisplayName xmlns:d2p1="http://schemas.microsoft.com/xrm/2011/Contracts">
+		<d2p1:LocalizedLabels>
+			<d2p1:LocalizedLabel>
+				<d2p1:Label>Open Revenue</d2p1:Label>
+				<d2p1:LanguageCode>1033</d2p1:LanguageCode>
+			</d2p1:LocalizedLabel>
+		</d2p1:LocalizedLabels>
+	</DisplayName>
+	<EntityLogicalName>account</EntityLogicalName>
+	<InheritsFrom i:nil="true" />
+	<IsCustomAttribute>false</IsCustomAttribute>
+	<IsFilterable>false</IsFilterable>
+	<IsPrimaryId>false</IsPrimaryId>
+	<IsPrimaryName>false</IsPrimaryName>
+	<LinkedAttributeId i:nil="true" />
+	<LogicalName>openrevenue</LogicalName>
+	<RequiredLevel>
+		<CanBeChanged xmlns="http://schemas.microsoft.com/xrm/2011/Contracts">true</CanBeChanged>
+		<ManagedPropertyLogicalName xmlns="http://schemas.microsoft.com/xrm/2011/Contracts">canmodifyrequirementlevelsettings</ManagedPropertyLogicalName>
+		<Value xmlns="http://schemas.microsoft.com/xrm/2011/Contracts">None</Value>
+	</RequiredLevel>
+	<SchemaName>OpenRevenue</SchemaName>
+	<AttributeTypeName xmlns:d2p1="http://schemas.microsoft.com/xrm/2013/Metadata">
+		<d2p1:Value>MoneyType</d2p1:Value>
+	</AttributeTypeName>
+	<IsLogical>false</IsLogical>
+	<SourceType>2</SourceType>
+	<CalculationOf i:nil="true" />
+	<ImeMode>Auto</ImeMode>
+	<MaxValue>922337203685477</MaxValue>
+	<MinValue>-922337203685477</MinValue>
+	<Precision>2</Precision>
+	<PrecisionSource>2</PrecisionSource>
+	<FormulaDefinition>&lt;Activity x:Class="XrmWorkflow00000000000000000000000000000000" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mcwc="clr-namespace:Microsoft.Crm.Workflow.ClientActivities;assembly=Microsoft.Crm.Workflow, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" xmlns:mxs="clr-namespace:Microsoft.Xrm.Sdk;assembly=Microsoft.Xrm.Sdk, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" xmlns:mxsq="clr-namespace:Microsoft.Xrm.Sdk.Query;assembly=Microsoft.Xrm.Sdk, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" xmlns:mxswa="clr-namespace:Microsoft.Xrm.Sdk.Workflow.Activities;assembly=Microsoft.Xrm.Sdk.Workflow, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" xmlns:s="clr-namespace:System;assembly=mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" xmlns:srs="clr-namespace:System.Runtime.Serialization;assembly=System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" xmlns:this="clr-namespace:" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"&gt;&lt;x:Members&gt;&lt;x:Property Name="InputEntities" Type="InArgument(scg:IDictionary(x:String, mxs:Entity))" /&gt;&lt;x:Property Name="CreatedEntities" Type="InArgument(scg:IDictionary(x:String, mxs:Entity))" /&gt;&lt;/x:Members&gt;&lt;this:XrmWorkflow00000000000000000000000000000000.InputEntities&gt;&lt;InArgument x:TypeArguments="scg:IDictionary(x:String, mxs:Entity)" /&gt;&lt;/this:XrmWorkflow00000000000000000000000000000000.InputEntities&gt;&lt;this:XrmWorkflow00000000000000000000000000000000.CreatedEntities&gt;&lt;InArgument x:TypeArguments="scg:IDictionary(x:String, mxs:Entity)" /&gt;&lt;/this:XrmWorkflow00000000000000000000000000000000.CreatedEntities&gt;&lt;mva:VisualBasic.Settings&gt;Assembly references and imported namespaces for internal implementation&lt;/mva:VisualBasic.Settings&gt;&lt;mxswa:Workflow&gt;&lt;Sequence DisplayName="RollupRuleStep1"&gt;&lt;Sequence DisplayName="Source"&gt;&lt;Sequence.Variables&gt;&lt;Variable x:TypeArguments="x:String" Default="account_parent_account" Name="HierarchicalRelationshipName" /&gt;&lt;/Sequence.Variables&gt;&lt;/Sequence&gt;&lt;Sequence DisplayName="Target"&gt;&lt;Sequence.Variables&gt;&lt;Variable x:TypeArguments="x:Boolean" Default="False" Name="RollupRuleStep1_1" /&gt;&lt;Variable x:TypeArguments="x:Object" Name="RollupRuleStep1_2" /&gt;&lt;Variable x:TypeArguments="x:Object" Name="RollupRuleStep1_3" /&gt;&lt;/Sequence.Variables&gt;&lt;mcwc:SetAttributeValue DisplayName="opportunity.parentaccountid.opportunity_parent_account" Entity="[CreatedEntities(&amp;quot;relatedlinked_opportunity_parent_account#parentaccountid#opportunity#Temp&amp;quot;)]" EntityName="opportunity" /&gt;&lt;mxswa:GetEntityProperty Attribute="statecode" Entity="[InputEntities(&amp;quot;primaryEntity&amp;quot;)]" EntityName="opportunity" Value="[RollupRuleStep1_2]"&gt;&lt;mxswa:GetEntityProperty.TargetType&gt;&lt;InArgument x:TypeArguments="s:Type"&gt;&lt;mxswa:ReferenceLiteral x:TypeArguments="s:Type"&gt;&lt;x:Null /&gt;&lt;/mxswa:ReferenceLiteral&gt;&lt;/InArgument&gt;&lt;/mxswa:GetEntityProperty.TargetType&gt;&lt;/mxswa:GetEntityProperty&gt;&lt;mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression"&gt;&lt;mxswa:ActivityReference.Arguments&gt;&lt;InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator"&gt;CreateCrmType&lt;/InArgument&gt;&lt;InArgument x:TypeArguments="s:Object[]" x:Key="Parameters"&gt;[New Object() { Microsoft.Xrm.Sdk.Workflow.WorkflowPropertyType.OptionSetValue, "0", "State" }]&lt;/InArgument&gt;&lt;InArgument x:TypeArguments="s:Type" x:Key="TargetType"&gt;&lt;mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" /&gt;&lt;/InArgument&gt;&lt;OutArgument x:TypeArguments="x:Object" x:Key="Result"&gt;[RollupRuleStep1_3]&lt;/OutArgument&gt;&lt;/mxswa:ActivityReference.Arguments&gt;&lt;/mxswa:ActivityReference&gt;&lt;mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateCondition, Microsoft.Crm.Workflow, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateCondition"&gt;&lt;mxswa:ActivityReference.Arguments&gt;&lt;InArgument x:TypeArguments="mxsq:ConditionOperator" x:Key="ConditionOperator"&gt;Equal&lt;/InArgument&gt;&lt;InArgument x:TypeArguments="s:Object[]" x:Key="Parameters"&gt;[New Object() { RollupRuleStep1_3 }]&lt;/InArgument&gt;&lt;InArgument x:TypeArguments="x:Object" x:Key="Operand"&gt;[RollupRuleStep1_2]&lt;/InArgument&gt;&lt;OutArgument x:TypeArguments="x:Boolean" x:Key="Result"&gt;[RollupRuleStep1_1]&lt;/OutArgument&gt;&lt;/mxswa:ActivityReference.Arguments&gt;&lt;/mxswa:ActivityReference&gt;&lt;/Sequence&gt;&lt;Sequence DisplayName="Aggregate"&gt;&lt;Sequence.Variables&gt;&lt;Variable x:TypeArguments="x:Object" Name="RollupRuleStep1_4" /&gt;&lt;Variable x:TypeArguments="x:Object" Name="RollupRuleStep1_5" /&gt;&lt;/Sequence.Variables&gt;&lt;mxswa:GetEntityProperty Attribute="estimatedvalue" Entity="[InputEntities(&amp;quot;primaryEntity&amp;quot;)]" EntityName="opportunity" Value="[RollupRuleStep1_5]"&gt;&lt;mxswa:GetEntityProperty.TargetType&gt;&lt;InArgument x:TypeArguments="s:Type"&gt;&lt;mxswa:ReferenceLiteral x:TypeArguments="s:Type"&gt;&lt;x:Null /&gt;&lt;/mxswa:ReferenceLiteral&gt;&lt;/InArgument&gt;&lt;/mxswa:GetEntityProperty.TargetType&gt;&lt;/mxswa:GetEntityProperty&gt;&lt;mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression"&gt;&lt;mxswa:ActivityReference.Arguments&gt;&lt;InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator"&gt;Sum&lt;/InArgument&gt;&lt;InArgument x:TypeArguments="s:Object[]" x:Key="Parameters"&gt;[New Object() { RollupRuleStep1_5 }]&lt;/InArgument&gt;&lt;InArgument x:TypeArguments="s:Type" x:Key="TargetType"&gt;&lt;mxswa:ReferenceLiteral x:TypeArguments="s:Type"&gt;&lt;x:Null /&gt;&lt;/mxswa:ReferenceLiteral&gt;&lt;/InArgument&gt;&lt;OutArgument x:TypeArguments="x:Object" x:Key="Result"&gt;[RollupRuleStep1_4]&lt;/OutArgument&gt;&lt;/mxswa:ActivityReference.Arguments&gt;&lt;/mxswa:ActivityReference&gt;&lt;/Sequence&gt;&lt;/Sequence&gt;&lt;/mxswa:Workflow&gt;&lt;/Activity&gt;</FormulaDefinition>
+	<IsBaseCurrency>false</IsBaseCurrency>
+	<SourceTypeMask>0</SourceTypeMask>
+</AttributeMetadata>

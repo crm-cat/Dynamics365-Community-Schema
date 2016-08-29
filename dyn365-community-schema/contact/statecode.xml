@@ -1,0 +1,98 @@
+﻿<AttributeMetadata xmlns:i="http://www.w3.org/2001/XMLSchema-instance" i:type="StateAttributeMetadata" xmlns="http://schemas.microsoft.com/xrm/2011/Metadata">
+	<AttributeOf i:nil="true" />
+	<AttributeType>State</AttributeType>
+	<Description xmlns:d2p1="http://schemas.microsoft.com/xrm/2011/Contracts">
+		<d2p1:LocalizedLabels>
+			<d2p1:LocalizedLabel>
+				<d2p1:Label>Shows whether the contact is active or inactive. Inactive contacts are read-only and can't be edited unless they are reactivated.</d2p1:Label>
+				<d2p1:LanguageCode>1033</d2p1:LanguageCode>
+			</d2p1:LocalizedLabel>
+		</d2p1:LocalizedLabels>
+	</Description>
+	<DisplayName xmlns:d2p1="http://schemas.microsoft.com/xrm/2011/Contracts">
+		<d2p1:LocalizedLabels>
+			<d2p1:LocalizedLabel>
+				<d2p1:Label>Status</d2p1:Label>
+				<d2p1:LanguageCode>1033</d2p1:LanguageCode>
+			</d2p1:LocalizedLabel>
+		</d2p1:LocalizedLabels>
+	</DisplayName>
+	<EntityLogicalName>contact</EntityLogicalName>
+	<InheritsFrom i:nil="true" />
+	<IsCustomAttribute>false</IsCustomAttribute>
+	<IsFilterable>true</IsFilterable>
+	<IsPrimaryId>false</IsPrimaryId>
+	<IsPrimaryName>false</IsPrimaryName>
+	<LinkedAttributeId i:nil="true" />
+	<LogicalName>statecode</LogicalName>
+	<RequiredLevel>
+		<CanBeChanged xmlns="http://schemas.microsoft.com/xrm/2011/Contracts">false</CanBeChanged>
+		<ManagedPropertyLogicalName xmlns="http://schemas.microsoft.com/xrm/2011/Contracts">canmodifyrequirementlevelsettings</ManagedPropertyLogicalName>
+		<Value xmlns="http://schemas.microsoft.com/xrm/2011/Contracts">SystemRequired</Value>
+	</RequiredLevel>
+	<SchemaName>StateCode</SchemaName>
+	<AttributeTypeName xmlns:d2p1="http://schemas.microsoft.com/xrm/2013/Metadata">
+		<d2p1:Value>StateType</d2p1:Value>
+	</AttributeTypeName>
+	<IsLogical>false</IsLogical>
+	<SourceType i:nil="true" />
+	<DefaultFormValue>0</DefaultFormValue>
+	<OptionSet>
+		<Description xmlns:d3p1="http://schemas.microsoft.com/xrm/2011/Contracts">
+			<d3p1:LocalizedLabels>
+				<d3p1:LocalizedLabel>
+					<d3p1:Label>Status of the contact.</d3p1:Label>
+					<d3p1:LanguageCode>1033</d3p1:LanguageCode>
+				</d3p1:LocalizedLabel>
+			</d3p1:LocalizedLabels>
+		</Description>
+		<DisplayName xmlns:d3p1="http://schemas.microsoft.com/xrm/2011/Contracts">
+			<d3p1:LocalizedLabels>
+				<d3p1:LocalizedLabel>
+					<d3p1:Label>Status</d3p1:Label>
+					<d3p1:LanguageCode>1033</d3p1:LanguageCode>
+				</d3p1:LocalizedLabel>
+			</d3p1:LocalizedLabels>
+		</DisplayName>
+		<IsCustomOptionSet>false</IsCustomOptionSet>
+		<IsGlobal>false</IsGlobal>
+		<Name>contact_statecode</Name>
+		<OptionSetType>State</OptionSetType>
+		<Options>
+			<OptionMetadata i:type="StateOptionMetadata">
+				<Color i:nil="true" />
+				<Description xmlns:d5p1="http://schemas.microsoft.com/xrm/2011/Contracts">
+					<d5p1:LocalizedLabels />
+				</Description>
+				<Label xmlns:d5p1="http://schemas.microsoft.com/xrm/2011/Contracts">
+					<d5p1:LocalizedLabels>
+						<d5p1:LocalizedLabel>
+							<d5p1:Label>Active</d5p1:Label>
+							<d5p1:LanguageCode>1033</d5p1:LanguageCode>
+						</d5p1:LocalizedLabel>
+					</d5p1:LocalizedLabels>
+				</Label>
+				<Value>0</Value>
+				<DefaultStatus>1</DefaultStatus>
+				<InvariantName>Active</InvariantName>
+			</OptionMetadata>
+			<OptionMetadata i:type="StateOptionMetadata">
+				<Color i:nil="true" />
+				<Description xmlns:d5p1="http://schemas.microsoft.com/xrm/2011/Contracts">
+					<d5p1:LocalizedLabels />
+				</Description>
+				<Label xmlns:d5p1="http://schemas.microsoft.com/xrm/2011/Contracts">
+					<d5p1:LocalizedLabels>
+						<d5p1:LocalizedLabel>
+							<d5p1:Label>Inactive</d5p1:Label>
+							<d5p1:LanguageCode>1033</d5p1:LanguageCode>
+						</d5p1:LocalizedLabel>
+					</d5p1:LocalizedLabels>
+				</Label>
+				<Value>1</Value>
+				<DefaultStatus>2</DefaultStatus>
+				<InvariantName>Inactive</InvariantName>
+			</OptionMetadata>
+		</Options>
+	</OptionSet>
+</AttributeMetadata>

@@ -1,0 +1,51 @@
+﻿<AttributeMetadata xmlns:i="http://www.w3.org/2001/XMLSchema-instance" i:type="DateTimeAttributeMetadata" xmlns="http://schemas.microsoft.com/xrm/2011/Metadata">
+	<AttributeOf i:nil="true" />
+	<AttributeType>DateTime</AttributeType>
+	<Description xmlns:d2p1="http://schemas.microsoft.com/xrm/2011/Contracts">
+		<d2p1:LocalizedLabels>
+			<d2p1:LocalizedLabel>
+				<d2p1:Label>Shows the date when the contact was last included in a marketing campaign or quick campaign.</d2p1:Label>
+				<d2p1:LanguageCode>1033</d2p1:LanguageCode>
+			</d2p1:LocalizedLabel>
+		</d2p1:LocalizedLabels>
+	</Description>
+	<DisplayName xmlns:d2p1="http://schemas.microsoft.com/xrm/2011/Contracts">
+		<d2p1:LocalizedLabels>
+			<d2p1:LocalizedLabel>
+				<d2p1:Label>Last Date Included in Campaign</d2p1:Label>
+				<d2p1:LanguageCode>1033</d2p1:LanguageCode>
+			</d2p1:LocalizedLabel>
+		</d2p1:LocalizedLabels>
+	</DisplayName>
+	<EntityLogicalName>contact</EntityLogicalName>
+	<InheritsFrom i:nil="true" />
+	<IsCustomAttribute>false</IsCustomAttribute>
+	<IsFilterable>false</IsFilterable>
+	<IsPrimaryId>false</IsPrimaryId>
+	<IsPrimaryName>false</IsPrimaryName>
+	<LinkedAttributeId i:nil="true" />
+	<LogicalName>lastusedincampaign</LogicalName>
+	<RequiredLevel>
+		<CanBeChanged xmlns="http://schemas.microsoft.com/xrm/2011/Contracts">true</CanBeChanged>
+		<ManagedPropertyLogicalName xmlns="http://schemas.microsoft.com/xrm/2011/Contracts">canmodifyrequirementlevelsettings</ManagedPropertyLogicalName>
+		<Value xmlns="http://schemas.microsoft.com/xrm/2011/Contracts">None</Value>
+	</RequiredLevel>
+	<SchemaName>LastUsedInCampaign</SchemaName>
+	<AttributeTypeName xmlns:d2p1="http://schemas.microsoft.com/xrm/2013/Metadata">
+		<d2p1:Value>DateTimeType</d2p1:Value>
+	</AttributeTypeName>
+	<IsLogical>false</IsLogical>
+	<SourceType>0</SourceType>
+	<Format>DateOnly</Format>
+	<ImeMode>Inactive</ImeMode>
+	<FormulaDefinition i:nil="true" />
+	<SourceTypeMask>0</SourceTypeMask>
+	<CanChangeDateTimeBehavior xmlns:d2p1="http://schemas.microsoft.com/xrm/2011/Contracts">
+		<d2p1:CanBeChanged>false</d2p1:CanBeChanged>
+		<d2p1:ManagedPropertyLogicalName>canmodifybehavior</d2p1:ManagedPropertyLogicalName>
+		<d2p1:Value>false</d2p1:Value>
+	</CanChangeDateTimeBehavior>
+	<DateTimeBehavior xmlns:d2p1="http://schemas.microsoft.com/xrm/7.1/Metadata">
+		<Value xmlns="http://schemas.microsoft.com/xrm/2013/Metadata">UserLocal</Value>
+	</DateTimeBehavior>
+</AttributeMetadata>

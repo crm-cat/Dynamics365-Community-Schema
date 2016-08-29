@@ -1,0 +1,94 @@
+﻿<AttributeMetadata xmlns:i="http://www.w3.org/2001/XMLSchema-instance" i:type="BooleanAttributeMetadata" xmlns="http://schemas.microsoft.com/xrm/2011/Metadata">
+	<AttributeOf i:nil="true" />
+	<AttributeType>Boolean</AttributeType>
+	<Description xmlns:d2p1="http://schemas.microsoft.com/xrm/2011/Contracts">
+		<d2p1:LocalizedLabels>
+			<d2p1:LocalizedLabel>
+				<d2p1:Label>Select whether the account allows direct mail. If Do Not Allow is selected, the account will be excluded from letter activities distributed in marketing campaigns.</d2p1:Label>
+				<d2p1:LanguageCode>1033</d2p1:LanguageCode>
+			</d2p1:LocalizedLabel>
+		</d2p1:LocalizedLabels>
+	</Description>
+	<DisplayName xmlns:d2p1="http://schemas.microsoft.com/xrm/2011/Contracts">
+		<d2p1:LocalizedLabels>
+			<d2p1:LocalizedLabel>
+				<d2p1:Label>Do not allow Mails</d2p1:Label>
+				<d2p1:LanguageCode>1033</d2p1:LanguageCode>
+			</d2p1:LocalizedLabel>
+		</d2p1:LocalizedLabels>
+	</DisplayName>
+	<EntityLogicalName>account</EntityLogicalName>
+	<InheritsFrom i:nil="true" />
+	<IsCustomAttribute>false</IsCustomAttribute>
+	<IsFilterable>false</IsFilterable>
+	<IsPrimaryId>false</IsPrimaryId>
+	<IsPrimaryName>false</IsPrimaryName>
+	<LinkedAttributeId i:nil="true" />
+	<LogicalName>donotpostalmail</LogicalName>
+	<RequiredLevel>
+		<CanBeChanged xmlns="http://schemas.microsoft.com/xrm/2011/Contracts">true</CanBeChanged>
+		<ManagedPropertyLogicalName xmlns="http://schemas.microsoft.com/xrm/2011/Contracts">canmodifyrequirementlevelsettings</ManagedPropertyLogicalName>
+		<Value xmlns="http://schemas.microsoft.com/xrm/2011/Contracts">None</Value>
+	</RequiredLevel>
+	<SchemaName>DoNotPostalMail</SchemaName>
+	<AttributeTypeName xmlns:d2p1="http://schemas.microsoft.com/xrm/2013/Metadata">
+		<d2p1:Value>BooleanType</d2p1:Value>
+	</AttributeTypeName>
+	<IsLogical>false</IsLogical>
+	<SourceType>0</SourceType>
+	<DefaultValue>false</DefaultValue>
+	<OptionSet>
+		<Description xmlns:d3p1="http://schemas.microsoft.com/xrm/2011/Contracts">
+			<d3p1:LocalizedLabels>
+				<d3p1:LocalizedLabel>
+					<d3p1:Label>Information about whether to allow sending postal mail to the account.</d3p1:Label>
+					<d3p1:LanguageCode>1033</d3p1:LanguageCode>
+				</d3p1:LocalizedLabel>
+			</d3p1:LocalizedLabels>
+		</Description>
+		<DisplayName xmlns:d3p1="http://schemas.microsoft.com/xrm/2011/Contracts">
+			<d3p1:LocalizedLabels>
+				<d3p1:LocalizedLabel>
+					<d3p1:Label>Do not allow Mails</d3p1:Label>
+					<d3p1:LanguageCode>1033</d3p1:LanguageCode>
+				</d3p1:LocalizedLabel>
+			</d3p1:LocalizedLabels>
+		</DisplayName>
+		<IsCustomOptionSet>false</IsCustomOptionSet>
+		<IsGlobal>false</IsGlobal>
+		<Name>account_donotpostalmail</Name>
+		<OptionSetType>Boolean</OptionSetType>
+		<FalseOption>
+			<Color i:nil="true" />
+			<Description xmlns:d4p1="http://schemas.microsoft.com/xrm/2011/Contracts">
+				<d4p1:LocalizedLabels />
+			</Description>
+			<Label xmlns:d4p1="http://schemas.microsoft.com/xrm/2011/Contracts">
+				<d4p1:LocalizedLabels>
+					<d4p1:LocalizedLabel>
+						<d4p1:Label>Allow</d4p1:Label>
+						<d4p1:LanguageCode>1033</d4p1:LanguageCode>
+					</d4p1:LocalizedLabel>
+				</d4p1:LocalizedLabels>
+			</Label>
+			<Value>0</Value>
+		</FalseOption>
+		<TrueOption>
+			<Color i:nil="true" />
+			<Description xmlns:d4p1="http://schemas.microsoft.com/xrm/2011/Contracts">
+				<d4p1:LocalizedLabels />
+			</Description>
+			<Label xmlns:d4p1="http://schemas.microsoft.com/xrm/2011/Contracts">
+				<d4p1:LocalizedLabels>
+					<d4p1:LocalizedLabel>
+						<d4p1:Label>Do Not Allow</d4p1:Label>
+						<d4p1:LanguageCode>1033</d4p1:LanguageCode>
+					</d4p1:LocalizedLabel>
+				</d4p1:LocalizedLabels>
+			</Label>
+			<Value>1</Value>
+		</TrueOption>
+	</OptionSet>
+	<FormulaDefinition i:nil="true" />
+	<SourceTypeMask>0</SourceTypeMask>
+</AttributeMetadata>

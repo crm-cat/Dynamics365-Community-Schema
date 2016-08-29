@@ -1,0 +1,81 @@
+﻿<AttributeMetadata xmlns:i="http://www.w3.org/2001/XMLSchema-instance" i:type="PicklistAttributeMetadata" xmlns="http://schemas.microsoft.com/xrm/2011/Metadata">
+	<AttributeOf i:nil="true" />
+	<AttributeType>Picklist</AttributeType>
+	<Description xmlns:d2p1="http://schemas.microsoft.com/xrm/2011/Contracts">
+		<d2p1:LocalizedLabels>
+			<d2p1:LocalizedLabel>
+				<d2p1:Label>Select a shipping method for deliveries sent to this address.</d2p1:Label>
+				<d2p1:LanguageCode>1033</d2p1:LanguageCode>
+			</d2p1:LocalizedLabel>
+		</d2p1:LocalizedLabels>
+	</Description>
+	<DisplayName xmlns:d2p1="http://schemas.microsoft.com/xrm/2011/Contracts">
+		<d2p1:LocalizedLabels>
+			<d2p1:LocalizedLabel>
+				<d2p1:Label>Shipping Method</d2p1:Label>
+				<d2p1:LanguageCode>1033</d2p1:LanguageCode>
+			</d2p1:LocalizedLabel>
+		</d2p1:LocalizedLabels>
+	</DisplayName>
+	<EntityLogicalName>contact</EntityLogicalName>
+	<InheritsFrom i:nil="true" />
+	<IsCustomAttribute>false</IsCustomAttribute>
+	<IsFilterable>false</IsFilterable>
+	<IsPrimaryId>false</IsPrimaryId>
+	<IsPrimaryName>false</IsPrimaryName>
+	<LinkedAttributeId i:nil="true" />
+	<LogicalName>shippingmethodcode</LogicalName>
+	<RequiredLevel>
+		<CanBeChanged xmlns="http://schemas.microsoft.com/xrm/2011/Contracts">true</CanBeChanged>
+		<ManagedPropertyLogicalName xmlns="http://schemas.microsoft.com/xrm/2011/Contracts">canmodifyrequirementlevelsettings</ManagedPropertyLogicalName>
+		<Value xmlns="http://schemas.microsoft.com/xrm/2011/Contracts">None</Value>
+	</RequiredLevel>
+	<SchemaName>ShippingMethodCode</SchemaName>
+	<AttributeTypeName xmlns:d2p1="http://schemas.microsoft.com/xrm/2013/Metadata">
+		<d2p1:Value>PicklistType</d2p1:Value>
+	</AttributeTypeName>
+	<IsLogical>false</IsLogical>
+	<SourceType>0</SourceType>
+	<DefaultFormValue>1</DefaultFormValue>
+	<OptionSet>
+		<Description xmlns:d3p1="http://schemas.microsoft.com/xrm/2011/Contracts">
+			<d3p1:LocalizedLabels>
+				<d3p1:LocalizedLabel>
+					<d3p1:Label>Method of shipping for the contact.</d3p1:Label>
+					<d3p1:LanguageCode>1033</d3p1:LanguageCode>
+				</d3p1:LocalizedLabel>
+			</d3p1:LocalizedLabels>
+		</Description>
+		<DisplayName xmlns:d3p1="http://schemas.microsoft.com/xrm/2011/Contracts">
+			<d3p1:LocalizedLabels>
+				<d3p1:LocalizedLabel>
+					<d3p1:Label>Shipping Method </d3p1:Label>
+					<d3p1:LanguageCode>1033</d3p1:LanguageCode>
+				</d3p1:LocalizedLabel>
+			</d3p1:LocalizedLabels>
+		</DisplayName>
+		<IsCustomOptionSet>false</IsCustomOptionSet>
+		<IsGlobal>false</IsGlobal>
+		<Name>contact_shippingmethodcode</Name>
+		<OptionSetType>Picklist</OptionSetType>
+		<Options>
+			<OptionMetadata>
+				<Color i:nil="true" />
+				<Description xmlns:d5p1="http://schemas.microsoft.com/xrm/2011/Contracts">
+					<d5p1:LocalizedLabels />
+				</Description>
+				<Label xmlns:d5p1="http://schemas.microsoft.com/xrm/2011/Contracts">
+					<d5p1:LocalizedLabels>
+						<d5p1:LocalizedLabel>
+							<d5p1:Label>Default Value</d5p1:Label>
+							<d5p1:LanguageCode>1033</d5p1:LanguageCode>
+						</d5p1:LocalizedLabel>
+					</d5p1:LocalizedLabels>
+				</Label>
+				<Value>1</Value>
+			</OptionMetadata>
+		</Options>
+	</OptionSet>
+	<FormulaDefinition i:nil="true" />
+	<SourceTypeMask>0</SourceTypeMask>
+</AttributeMetadata>

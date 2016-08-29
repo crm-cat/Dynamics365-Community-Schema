@@ -1,0 +1,29 @@
+﻿<ManyToManyRelationshipMetadata xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/xrm/2011/Metadata">
+	<IsCustomRelationship>false</IsCustomRelationship>
+	<SchemaName>listaccount_association</SchemaName>
+	<SecurityTypes>None</SecurityTypes>
+	<RelationshipType>ManyToManyRelationship</RelationshipType>
+	<Entity1AssociatedMenuConfiguration>
+		<Behavior>UseCollectionName</Behavior>
+		<Group>Marketing</Group>
+		<Label xmlns:d3p1="http://schemas.microsoft.com/xrm/2011/Contracts">
+			<d3p1:LocalizedLabels />
+		</Label>
+		<Order>10</Order>
+	</Entity1AssociatedMenuConfiguration>
+	<Entity1IntersectAttribute>listid</Entity1IntersectAttribute>
+	<Entity1LogicalName>list</Entity1LogicalName>
+	<Entity1NavigationPropertyName>listaccount_association</Entity1NavigationPropertyName>
+	<Entity2AssociatedMenuConfiguration>
+		<Behavior>DoNotDisplay</Behavior>
+		<Group>Details</Group>
+		<Label xmlns:d3p1="http://schemas.microsoft.com/xrm/2011/Contracts">
+			<d3p1:LocalizedLabels />
+		</Label>
+		<Order i:nil="true" />
+	</Entity2AssociatedMenuConfiguration>
+	<Entity2IntersectAttribute>entityid</Entity2IntersectAttribute>
+	<Entity2LogicalName>account</Entity2LogicalName>
+	<Entity2NavigationPropertyName>listaccount_association</Entity2NavigationPropertyName>
+	<IntersectEntityName>listmember</IntersectEntityName>
+</ManyToManyRelationshipMetadata>
