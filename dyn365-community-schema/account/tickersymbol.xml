@@ -1,0 +1,49 @@
+﻿<AttributeMetadata xmlns:i="http://www.w3.org/2001/XMLSchema-instance" i:type="StringAttributeMetadata" xmlns="http://schemas.microsoft.com/xrm/2011/Metadata">
+	<AttributeOf i:nil="true" />
+	<AttributeType>String</AttributeType>
+	<Description xmlns:d2p1="http://schemas.microsoft.com/xrm/2011/Contracts">
+		<d2p1:LocalizedLabels>
+			<d2p1:LocalizedLabel>
+				<d2p1:Label>Type the stock exchange symbol for the account to track financial performance of the company. You can click the code entered in this field to access the latest trading information from MSN Money.</d2p1:Label>
+				<d2p1:LanguageCode>1033</d2p1:LanguageCode>
+			</d2p1:LocalizedLabel>
+		</d2p1:LocalizedLabels>
+	</Description>
+	<DisplayName xmlns:d2p1="http://schemas.microsoft.com/xrm/2011/Contracts">
+		<d2p1:LocalizedLabels>
+			<d2p1:LocalizedLabel>
+				<d2p1:Label>Ticker Symbol</d2p1:Label>
+				<d2p1:LanguageCode>1033</d2p1:LanguageCode>
+			</d2p1:LocalizedLabel>
+		</d2p1:LocalizedLabels>
+	</DisplayName>
+	<EntityLogicalName>account</EntityLogicalName>
+	<InheritsFrom i:nil="true" />
+	<IsCustomAttribute>false</IsCustomAttribute>
+	<IsFilterable>false</IsFilterable>
+	<IsPrimaryId>false</IsPrimaryId>
+	<IsPrimaryName>false</IsPrimaryName>
+	<LinkedAttributeId i:nil="true" />
+	<LogicalName>tickersymbol</LogicalName>
+	<RequiredLevel>
+		<CanBeChanged xmlns="http://schemas.microsoft.com/xrm/2011/Contracts">true</CanBeChanged>
+		<ManagedPropertyLogicalName xmlns="http://schemas.microsoft.com/xrm/2011/Contracts">canmodifyrequirementlevelsettings</ManagedPropertyLogicalName>
+		<Value xmlns="http://schemas.microsoft.com/xrm/2011/Contracts">None</Value>
+	</RequiredLevel>
+	<SchemaName>TickerSymbol</SchemaName>
+	<AttributeTypeName xmlns:d2p1="http://schemas.microsoft.com/xrm/2013/Metadata">
+		<d2p1:Value>StringType</d2p1:Value>
+	</AttributeTypeName>
+	<IsLogical>false</IsLogical>
+	<SourceType>0</SourceType>
+	<Format>TickerSymbol</Format>
+	<ImeMode>Auto</ImeMode>
+	<MaxLength>10</MaxLength>
+	<YomiOf i:nil="true" />
+	<FormatName xmlns:d2p1="http://schemas.microsoft.com/xrm/2013/Metadata">
+		<d2p1:Value>TickerSymbol</d2p1:Value>
+	</FormatName>
+	<FormulaDefinition i:nil="true" />
+	<IsLocalizable>false</IsLocalizable>
+	<SourceTypeMask>0</SourceTypeMask>
+</AttributeMetadata>

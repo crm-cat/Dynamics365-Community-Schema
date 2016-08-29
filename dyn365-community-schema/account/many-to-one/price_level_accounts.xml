@@ -1,0 +1,73 @@
+﻿<ManyToOneRelationship xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Dyn365CommunitySchema">
+	<LookupAttribute xmlns:d2p1="http://schemas.microsoft.com/xrm/2011/Metadata" i:type="d2p1:LookupAttributeMetadata">
+		<d2p1:AttributeOf i:nil="true" />
+		<d2p1:AttributeType>Lookup</d2p1:AttributeType>
+		<d2p1:Description xmlns:d3p1="http://schemas.microsoft.com/xrm/2011/Contracts">
+			<d3p1:LocalizedLabels>
+				<d3p1:LocalizedLabel>
+					<d3p1:Label>Choose the default price list associated with the account to make sure the correct product prices for this customer are applied in sales opportunities, quotes, and orders.</d3p1:Label>
+					<d3p1:LanguageCode>1033</d3p1:LanguageCode>
+				</d3p1:LocalizedLabel>
+			</d3p1:LocalizedLabels>
+		</d2p1:Description>
+		<d2p1:DisplayName xmlns:d3p1="http://schemas.microsoft.com/xrm/2011/Contracts">
+			<d3p1:LocalizedLabels>
+				<d3p1:LocalizedLabel>
+					<d3p1:Label>Product Price List</d3p1:Label>
+					<d3p1:LanguageCode>1033</d3p1:LanguageCode>
+				</d3p1:LocalizedLabel>
+			</d3p1:LocalizedLabels>
+		</d2p1:DisplayName>
+		<d2p1:EntityLogicalName>account</d2p1:EntityLogicalName>
+		<d2p1:InheritsFrom i:nil="true" />
+		<d2p1:IsCustomAttribute>false</d2p1:IsCustomAttribute>
+		<d2p1:IsFilterable>false</d2p1:IsFilterable>
+		<d2p1:IsPrimaryId>false</d2p1:IsPrimaryId>
+		<d2p1:IsPrimaryName>false</d2p1:IsPrimaryName>
+		<d2p1:LinkedAttributeId i:nil="true" />
+		<d2p1:LogicalName>defaultpricelevelid</d2p1:LogicalName>
+		<d2p1:RequiredLevel>
+			<CanBeChanged xmlns="http://schemas.microsoft.com/xrm/2011/Contracts">true</CanBeChanged>
+			<ManagedPropertyLogicalName xmlns="http://schemas.microsoft.com/xrm/2011/Contracts">canmodifyrequirementlevelsettings</ManagedPropertyLogicalName>
+			<Value xmlns="http://schemas.microsoft.com/xrm/2011/Contracts">None</Value>
+		</d2p1:RequiredLevel>
+		<d2p1:SchemaName>DefaultPriceLevelId</d2p1:SchemaName>
+		<d2p1:AttributeTypeName xmlns:d3p1="http://schemas.microsoft.com/xrm/2013/Metadata">
+			<d3p1:Value>LookupType</d3p1:Value>
+		</d2p1:AttributeTypeName>
+		<d2p1:IsLogical>false</d2p1:IsLogical>
+		<d2p1:SourceType i:nil="true" />
+		<d2p1:Targets xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+			<d3p1:string>pricelevel</d3p1:string>
+		</d2p1:Targets>
+	</LookupAttribute>
+	<Relationship xmlns:d2p1="http://schemas.microsoft.com/xrm/2011/Metadata">
+		<d2p1:IsCustomRelationship>false</d2p1:IsCustomRelationship>
+		<d2p1:SchemaName>price_level_accounts</d2p1:SchemaName>
+		<d2p1:SecurityTypes>Append</d2p1:SecurityTypes>
+		<d2p1:RelationshipType>OneToManyRelationship</d2p1:RelationshipType>
+		<d2p1:AssociatedMenuConfiguration>
+			<d2p1:Behavior>DoNotDisplay</d2p1:Behavior>
+			<d2p1:Group>Details</d2p1:Group>
+			<d2p1:Label xmlns:d4p1="http://schemas.microsoft.com/xrm/2011/Contracts">
+				<d4p1:LocalizedLabels />
+			</d2p1:Label>
+			<d2p1:Order i:nil="true" />
+		</d2p1:AssociatedMenuConfiguration>
+		<d2p1:CascadeConfiguration>
+			<d2p1:Assign>NoCascade</d2p1:Assign>
+			<d2p1:Delete>Restrict</d2p1:Delete>
+			<d2p1:Merge>NoCascade</d2p1:Merge>
+			<d2p1:Reparent>NoCascade</d2p1:Reparent>
+			<d2p1:Share>NoCascade</d2p1:Share>
+			<d2p1:Unshare>NoCascade</d2p1:Unshare>
+		</d2p1:CascadeConfiguration>
+		<d2p1:IsHierarchical>false</d2p1:IsHierarchical>
+		<d2p1:ReferencedAttribute>pricelevelid</d2p1:ReferencedAttribute>
+		<d2p1:ReferencedEntity>pricelevel</d2p1:ReferencedEntity>
+		<d2p1:ReferencedEntityNavigationPropertyName>price_level_accounts</d2p1:ReferencedEntityNavigationPropertyName>
+		<d2p1:ReferencingAttribute>defaultpricelevelid</d2p1:ReferencingAttribute>
+		<d2p1:ReferencingEntity>account</d2p1:ReferencingEntity>
+		<d2p1:ReferencingEntityNavigationPropertyName>defaultpricelevelid</d2p1:ReferencingEntityNavigationPropertyName>
+	</Relationship>
+</ManyToOneRelationship>

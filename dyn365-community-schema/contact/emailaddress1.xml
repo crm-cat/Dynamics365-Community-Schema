@@ -1,0 +1,49 @@
+﻿<AttributeMetadata xmlns:i="http://www.w3.org/2001/XMLSchema-instance" i:type="StringAttributeMetadata" xmlns="http://schemas.microsoft.com/xrm/2011/Metadata">
+	<AttributeOf i:nil="true" />
+	<AttributeType>String</AttributeType>
+	<Description xmlns:d2p1="http://schemas.microsoft.com/xrm/2011/Contracts">
+		<d2p1:LocalizedLabels>
+			<d2p1:LocalizedLabel>
+				<d2p1:Label>Type the primary email address for the contact.</d2p1:Label>
+				<d2p1:LanguageCode>1033</d2p1:LanguageCode>
+			</d2p1:LocalizedLabel>
+		</d2p1:LocalizedLabels>
+	</Description>
+	<DisplayName xmlns:d2p1="http://schemas.microsoft.com/xrm/2011/Contracts">
+		<d2p1:LocalizedLabels>
+			<d2p1:LocalizedLabel>
+				<d2p1:Label>Email</d2p1:Label>
+				<d2p1:LanguageCode>1033</d2p1:LanguageCode>
+			</d2p1:LocalizedLabel>
+		</d2p1:LocalizedLabels>
+	</DisplayName>
+	<EntityLogicalName>contact</EntityLogicalName>
+	<InheritsFrom i:nil="true" />
+	<IsCustomAttribute>false</IsCustomAttribute>
+	<IsFilterable>false</IsFilterable>
+	<IsPrimaryId>false</IsPrimaryId>
+	<IsPrimaryName>false</IsPrimaryName>
+	<LinkedAttributeId i:nil="true" />
+	<LogicalName>emailaddress1</LogicalName>
+	<RequiredLevel>
+		<CanBeChanged xmlns="http://schemas.microsoft.com/xrm/2011/Contracts">true</CanBeChanged>
+		<ManagedPropertyLogicalName xmlns="http://schemas.microsoft.com/xrm/2011/Contracts">canmodifyrequirementlevelsettings</ManagedPropertyLogicalName>
+		<Value xmlns="http://schemas.microsoft.com/xrm/2011/Contracts">None</Value>
+	</RequiredLevel>
+	<SchemaName>EMailAddress1</SchemaName>
+	<AttributeTypeName xmlns:d2p1="http://schemas.microsoft.com/xrm/2013/Metadata">
+		<d2p1:Value>StringType</d2p1:Value>
+	</AttributeTypeName>
+	<IsLogical>false</IsLogical>
+	<SourceType>0</SourceType>
+	<Format>Email</Format>
+	<ImeMode>Inactive</ImeMode>
+	<MaxLength>100</MaxLength>
+	<YomiOf i:nil="true" />
+	<FormatName xmlns:d2p1="http://schemas.microsoft.com/xrm/2013/Metadata">
+		<d2p1:Value>Email</d2p1:Value>
+	</FormatName>
+	<FormulaDefinition i:nil="true" />
+	<IsLocalizable>false</IsLocalizable>
+	<SourceTypeMask>0</SourceTypeMask>
+</AttributeMetadata>

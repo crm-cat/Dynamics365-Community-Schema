@@ -1,0 +1,43 @@
+﻿<AttributeMetadata xmlns:i="http://www.w3.org/2001/XMLSchema-instance" i:type="LookupAttributeMetadata" xmlns="http://schemas.microsoft.com/xrm/2011/Metadata">
+	<AttributeOf i:nil="true" />
+	<AttributeType>Customer</AttributeType>
+	<Description xmlns:d2p1="http://schemas.microsoft.com/xrm/2011/Contracts">
+		<d2p1:LocalizedLabels>
+			<d2p1:LocalizedLabel>
+				<d2p1:Label>Select the parent account or parent contact for the contact to provide a quick link to additional details, such as financial information, activities, and opportunities.</d2p1:Label>
+				<d2p1:LanguageCode>1033</d2p1:LanguageCode>
+			</d2p1:LocalizedLabel>
+		</d2p1:LocalizedLabels>
+	</Description>
+	<DisplayName xmlns:d2p1="http://schemas.microsoft.com/xrm/2011/Contracts">
+		<d2p1:LocalizedLabels>
+			<d2p1:LocalizedLabel>
+				<d2p1:Label>Company Name</d2p1:Label>
+				<d2p1:LanguageCode>1033</d2p1:LanguageCode>
+			</d2p1:LocalizedLabel>
+		</d2p1:LocalizedLabels>
+	</DisplayName>
+	<EntityLogicalName>contact</EntityLogicalName>
+	<InheritsFrom i:nil="true" />
+	<IsCustomAttribute>false</IsCustomAttribute>
+	<IsFilterable>false</IsFilterable>
+	<IsPrimaryId>false</IsPrimaryId>
+	<IsPrimaryName>false</IsPrimaryName>
+	<LinkedAttributeId i:nil="true" />
+	<LogicalName>parentcustomerid</LogicalName>
+	<RequiredLevel>
+		<CanBeChanged xmlns="http://schemas.microsoft.com/xrm/2011/Contracts">true</CanBeChanged>
+		<ManagedPropertyLogicalName xmlns="http://schemas.microsoft.com/xrm/2011/Contracts">canmodifyrequirementlevelsettings</ManagedPropertyLogicalName>
+		<Value xmlns="http://schemas.microsoft.com/xrm/2011/Contracts">None</Value>
+	</RequiredLevel>
+	<SchemaName>ParentCustomerId</SchemaName>
+	<AttributeTypeName xmlns:d2p1="http://schemas.microsoft.com/xrm/2013/Metadata">
+		<d2p1:Value>CustomerType</d2p1:Value>
+	</AttributeTypeName>
+	<IsLogical>false</IsLogical>
+	<SourceType i:nil="true" />
+	<Targets xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+		<d2p1:string>account</d2p1:string>
+		<d2p1:string>contact</d2p1:string>
+	</Targets>
+</AttributeMetadata>
