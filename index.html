@@ -21,7 +21,7 @@
       <div class="inner">
         <h1>Dynamics365-schemas</h1>
         <h2></h2>
-        <a href="https://github.com/blackcat-/Dynamics365-Schemas" class="button"><small>View project on</small> GitHub</a>
+        <a href="https://github.com/blackcat-/Dynamics365-Community-Schema" class="button"><small>View project on</small> GitHub</a>
       </div>
     </header>
 
@@ -31,13 +31,13 @@
           <h3>
 <a id="welcome-the-dynamic-365-schema-project" class="anchor" href="#welcome-the-dynamic-365-schema-project" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome the Dynamic 365 Schema Project</h3>
 
-<p>Dynamics 365 is coming, and it is an exciting time as it will allow businesses to implement powerful and adaptable applications with minimal development costs, allowing for a more natural inseparability between Microsoft Dynamics CRM, AX, Project Maderia, Office 365, Power Apps and Flow. To know more about Dynamics 365, check the video out here: <a href="https://www.youtube.com/watch?v=fYIPXx9zjj8">https://www.youtube.com/watch?v=fYIPXx9zjj8</a></p>
+<p>Dynamics 365 is coming and it is an exciting time that will allow businesses to implement powerful and adaptable applications with minimal development costs and a huge array of tools at their disposable. It will allow for a more natural interoperability between Microsoft Dynamics CRM, AX, Project Maderia, Office 365, Power Apps and Flow. To find out more about Dynamics 365, check the video out here: <a href="https://www.youtube.com/watch?v=fYIPXx9zjj8">https://www.youtube.com/watch?v=fYIPXx9zjj8</a></p>
 
-<p>The challenge is that within implementations, depending on the industry, there are often different customisations required as they store and use different data. This can be time consuming for an implementation and also challenging to create, however with the introduction of Dynamics 365 and the Common Data Model that it will use, there cannot be a better time.</p>
+<p>The challenge is that within implementations, depending on the industry, there are often different customisations required as they store and use different data. This can be time consuming for an implementation and also challenging to create. However with the introduction of Dynamics 365 and the Common Data Model that it will use, there cannot be a better time to look at addressing this challenge.</p>
 
-<p>The aim is, initially utilising the Dynamics CRM out of the box schema for the Account and Contact entities, we would then work together on an open source schema for these record types that would then ultimately feed into the Common Data Model in Dynamics 365. The Schemas are intended to focus on data that is critical to the operation of the types of records across the world, and not just for local environments, so it is important that multiple different languages and industries are taken into consideration.</p>
+<p>The aim of the Dynamic 365 Community Schema project is initially utilising the Dynamics CRM out of the box schema for the Account and Contact entities, we all can work together on an open source schema for these record types that would then ultimately feed into the Common Data Model in Dynamics 365. The Schema's are intended to focus on data that is critical to the operation of the types of records across the world, and not just for local environments, so it is important that multiple different languages and industries are taken into consideration.</p>
 
-<p>When an organisation takes on a Microsoft Dynamics CRM Project, they  often customise  these elements and that takes thought and effort. This project aims to reduce that effort so that organisations can simply import this Schema and not require the work associated to defining these record types. The intention is for it to grow well beyond the Account and Contact records. </p>
+<p>When an organisation takes on a Microsoft Dynamics CRM Project, they  often customise  these elements and that takes thought, effort and time. This project aims to reduce that effort so that organisations can simply import this Schema and not require the work associated to defining these record types. The intention is for it to grow well beyond the Account and Contact records. </p>
 
 <h3>
 <a id="how-will-this-work" class="anchor" href="#how-will-this-work" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How will this work?</h3>
@@ -46,22 +46,49 @@
 
 <p>We need you! We need you to branch the main standard out of the box schema and put forward your ideas on what should be feature solutions to the overall Schema for the Account and Contact entities in Microsoft Dynamics CRM. </p>
 
-<p>To get started, go to the main repository and branch, making your edits in CRM and then export the solution, retrieve the XML Schema for the solution which contains your Account and/or Contact and upload to Github.</p>
+<h3>
+<a id="what-can-you-do-to-get-started" class="anchor" href="#what-can-you-do-to-get-started" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>What can you do to get started?</h3>
+
+<p>The easiest thing you can do is begin raising issues 'under the 'Issues' section on the repository related to common issues we can face as a community. You can also begin to answer issues raised by other people. </p>
+
+<p>Take a standard out of the box environment and create a new solution containing the entity you wish to customise. Make your edits to the fields and then once you have done this your ready to extract the XML using the custom built Schema Extractor available under this repository under the 'Schema Extractor' Folder.</p>
+
+<p>If you make any edits that are in response to an issue raised by another member of the community, you can link that issue to your commit. </p>
+
+<p>It's as simple as that to contribute to this project!</p>
+
+<h3>
+<a id="using-the-schema-generator" class="anchor" href="#using-the-schema-generator" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Using the Schema Generator</h3>
+
+<p>Scott (<a href="https://github.com/scottdurow" class="user-mention">@scottdurow</a>) has written a custom Schema Extractor tool that automatically exports the XML of your entities to a folder so you can easily commit your customisations directly to the project.</p>
+
+<p>There is a 'How to' file on how to use the command line tool within the repository under the 'Schema Extractor' Folder.</p>
 
 <h3>
 <a id="in-association-with-crmug" class="anchor" href="#in-association-with-crmug" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>In association with CRMUG</h3>
 
-<p>The drive for this project is the collaborative aspects and CRMUG is a fantastic platform and community to introduce to this to. CRMUG operate globally, but specifically in Europe this is going to be focused as a 8 month event where CRMUG Europe Chapters discuss and collaborate to get as many ideas and as much input as possible. </p>
+<p>The drive for this project is the collaborative aspects and CRMUG (<a href="https://www.crmug.com/home">https://www.crmug.com/home</a>) is a fantastic platform and community to introduce to this to. CRMUG operate globally, but specifically in Europe this is going to be focused as a 8 month event where CRMUG Europe Chapters discuss and collaborate to get as many ideas and as much input as possible. </p>
+
+<p>CRMUG UK Chapter info is here: <a href="https://crmug.uk/">https://crmug.uk/</a></p>
+
+<h3>
+<a id="planned-community-events" class="anchor" href="#planned-community-events" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Planned Community Events</h3>
+
+<p>There are plans for community events around the project to take place within the next 8 months. These will range between being at your local CRMUG Chapter meetings as roundtable sessions and also as online Skype meetings to discuss ideas and the project. We also encourage discussions here on GitHub. </p>
+
+<p>There will be a roundtable discussion at the CRMUG UK November event on 23rd November. </p>
+
+<p>More updates to follow.</p>
 
 <h3>
 <a id="first-release" class="anchor" href="#first-release" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>First Release</h3>
 
-<p>At the EMEA Summit, planned for April 2017, will feature a session which will introduce the first release based on the commit's people have completed over the past 8 months to create a 'first release' version of the Schemas. </p>
+<p>At the EMEA Summit, planned for April 2017, will feature a session which will introduce the First Release based on the commit's that people across the community have completed over the past 8 months to create a 'First Release' version of the Schemas. </p>
 
 <h3>
 <a id="and-after-that" class="anchor" href="#and-after-that" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>...and after that?</h3>
 
-<p>As with all open source projects, anybody can work on the solution, but this project is intended to grow past the Account and Contact record type and also start working together into the Common Data Model of Dynamics 365.</p>
+<p>As with all open source projects, anybody can work on the solution, but this project is intended to grow past the Account and Contact record type and also start working together into the Common Data Model of Dynamics 365 and maintained as a 'Community' schema tool. </p>
 
 <h3>
 <a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
@@ -70,16 +97,16 @@
         </section>
 
         <aside id="sidebar">
-          <a href="https://github.com/blackcat-/Dynamics365-Schemas/zipball/master" class="button">
+          <a href="https://github.com/blackcat-/Dynamics365-Community-Schema/zipball/master" class="button">
             <small>Download</small>
             .zip file
           </a>
-          <a href="https://github.com/blackcat-/Dynamics365-Schemas/tarball/master" class="button">
+          <a href="https://github.com/blackcat-/Dynamics365-Community-Schema/tarball/master" class="button">
             <small>Download</small>
             .tar.gz file
           </a>
 
-          <p class="repo-owner"><a href="https://github.com/blackcat-/Dynamics365-Schemas"></a> is maintained by <a href="https://github.com/blackcat-">blackcat-</a>.</p>
+          <p class="repo-owner"><a href="https://github.com/blackcat-/Dynamics365-Community-Schema"></a> is maintained by <a href="https://github.com/blackcat-">blackcat-</a>.</p>
 
           <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
         </aside>
